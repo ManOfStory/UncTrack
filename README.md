@@ -6,7 +6,7 @@ Uncertainty-Aware Prototype Memory Network**]()
 [[Models and Raw results]]() (Google Driver)  
 [[Models and Raw results]]() (Baidu Driver: password)
 
-![UncTrack_Framework](tracking/unctrack_framework.pdf)
+![UncTrack_Framework](tracking/unctrack_framework.jpg)
 
 ## Install the environment
 Use the Anaconda
