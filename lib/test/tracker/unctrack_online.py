@@ -155,18 +155,14 @@ class UncTrackOnline(BaseTracker):
                        [0, 0, 0, 0, 0, 1, 0, 0],
                        [0, 0, 0, 0, 0, 0, 1, 0],
                        [0, 0, 0, 0, 0, 0, 0, 1]])
-        # 状态观测矩阵
         self.H = np.eye(8)
-
-        # 过程噪声协方差矩阵Q，p(w)~N(0,Q)，噪声来自真实世界中的不确定性,
-        # 在跟踪任务当中，过程噪声来自于目标移动的不确定性（突然加速、减速、转弯等）
+）
         self.Q = np.eye(8) * 0.1
-        # 观测噪声协方差矩阵R，p(v)~N(0,R)
-        # 观测噪声来自于检测框丢失、重叠等
+        
         self.R = np.eye(8) * 10
-        # 控制输入矩阵B
+        
         self.B = None
-        # 状态估计协方差矩阵P初始化
+        
         self.P = np.eye(8)
         self.X_posterior = np.array(initial_state)
         self.P_posterior = np.array(self.P)
@@ -286,7 +282,7 @@ class UncTrackOnline(BaseTracker):
             self.nextprototype = out_dict['prototype']
             self.nextscore = pred_score
             self.update = True
-        # ###策略 FIFO
+        # ###strategy FIFO
         if self.frame_id % self.memory_update_interval == 0 and self.update:
             assert self.nextprototype is not None
             new_memory_score = torch.cat([self.memory_score[1:],torch.tensor([self.nextscore])],dim = 0)

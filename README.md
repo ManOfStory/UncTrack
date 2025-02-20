@@ -1,6 +1,6 @@
 # UncTrack
 
-The official implementation of the TIP 2024 paper [**UncTrack: Reliable Visual Object Tracking with
+The official implementation of the TIP 2025 paper [**UncTrack: Reliable Visual Object Tracking with
 Uncertainty-Aware Prototype Memory Network**]()
 
 [[Models and Raw results]](https://drive.google.com/drive/folders/1wfK1SP1N7YRyv7BWlYHFSuxT2WINvlHM?usp=sharing) (Google Driver)  
