@@ -100,10 +100,9 @@ The trained models and the raw tracking results are provided in the [[Models and
 [[Models and Raw results]](https://pan.baidu.com/s/1fdu1Ds5vByW8i2OKwRTtYA?pwd=4409) (Baidu Driver: 4409).
 
 ## Contact
-Siyuan Yao: yaosiyuan04@gmail.com
-
 Yang Guo: guoyang4409@gmail.com
 
+Siyuan Yao: yaosiyuan04@gmail.com
 
 ## Acknowledgments
 * Thanks for [MixFormer](https://github.com/MCG-NJU/MixFormer) Library, which helps us to quickly implement our ideas.
