@@ -101,7 +101,6 @@ The trained models and the raw tracking results are provided in the [[Models and
 
 ## Contact
 Yang Guo: guoyang4409@gmail.com
-
 Siyuan Yao: yaosiyuan04@gmail.com
 
 ## Acknowledgments
