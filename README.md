@@ -1,6 +1,6 @@
 # UncTrack
 
-The official implementation of the TIP 2025 paper [**UncTrack: Reliable Visual Object Tracking with
+The official implementation of the TIP 2025 submission [**UncTrack: Reliable Visual Object Tracking with
 Uncertainty-Aware Prototype Memory Network**]()
 
 [[Models and Raw results]](https://drive.google.com/drive/folders/1wfK1SP1N7YRyv7BWlYHFSuxT2WINvlHM?usp=sharing) (Google Driver)  
@@ -100,8 +100,10 @@ The trained models and the raw tracking results are provided in the [[Models and
 [[Models and Raw results]](https://pan.baidu.com/s/1fdu1Ds5vByW8i2OKwRTtYA?pwd=4409) (Baidu Driver: 4409).
 
 ## Contact
-Yang Guo: guoyang4409@gmail.com
 Siyuan Yao: yaosiyuan04@gmail.com
+
+Yang Guo: guoyang4409@gmail.com
+
 
 ## Acknowledgments
 * Thanks for [MixFormer](https://github.com/MCG-NJU/MixFormer) Library, which helps us to quickly implement our ideas.
