@@ -102,6 +102,8 @@ The trained models and the raw tracking results are provided in the [[Models and
 ## Contact
 Yang Guo: guoyang4409@gmail.com
 
+Siyuan Yao: yaosiyuan04@gmail.com
+
 ## Acknowledgments
 * Thanks for [MixFormer](https://github.com/MCG-NJU/MixFormer) Library, which helps us to quickly implement our ideas.
 
