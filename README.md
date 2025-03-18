@@ -1,7 +1,7 @@
 # UncTrack
 
 The official implementation of the TIP 2025 paper [**UncTrack: Reliable Visual Object Tracking with
-Uncertainty-Aware Prototype Memory Network**]()
+Uncertainty-Aware Prototype Memory Network**](https://arxiv.org/pdf/2503.12888)
 
 :loudspeaker: **Announcement**: This paper has been accepted by **IEEE Transactions on Image Processing (TIP)**! :tada:  
 
@@ -112,7 +112,15 @@ Siyuan Yao: yaosiyuan04@gmail.com
 ## ✏️ Citation
 
 If you think this project is helpful, please feel free to leave a star⭐️ and cite our paper:
-
 ```
-
+@misc{unctrack,
+      title={UncTrack: Reliable Visual Object Tracking with Uncertainty-Aware Prototype Memory Network}, 
+      author={Siyuan Yao and Yang Guo and Yanyang Yan and Wenqi Ren and Xiaochun Cao},
+      year={2025},
+      eprint={2503.12888},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.12888}, 
+}
+```
 ```
