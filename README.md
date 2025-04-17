@@ -113,14 +113,14 @@ Siyuan Yao: yaosiyuan04@gmail.com
 
 If you think this project is helpful, please feel free to leave a star⭐️ and cite our paper:
 ```
-@misc{unctrack,
-      title={UncTrack: Reliable Visual Object Tracking with Uncertainty-Aware Prototype Memory Network}, 
-      author={Siyuan Yao and Yang Guo and Yanyang Yan and Wenqi Ren and Xiaochun Cao},
-      year={2025},
-      eprint={2503.12888},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.12888}, 
+@ARTICLE{10967033,
+  author={Yao, Siyuan and Guo, Yang and Yan, Yanyang and Ren, Wenqi and Cao, Xiaochun},
+  journal={IEEE Transactions on Image Processing}, 
+  title={UncTrack: Reliable Visual Object Tracking with an Uncertainty-Aware Prototype Memory Network}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1}
 }
 ```
 ```
