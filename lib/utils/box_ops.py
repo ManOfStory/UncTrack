@@ -451,13 +451,6 @@ def NLL_loss(bbox_gt, bbox_pred, bbox_var):
 
 #先假设x和y独立
 class UncBoxLoss_CORNER(nn.Module):
-    """
-    Compute Targets:
-        1) Hard negative mining to filter the excessive number of negative examples
-           that comes with using a large number of default bounding boxes.
-           (default negative:positive ratio 3:1)
-    """
-
     def __init__(self,use_gpu=True):
         super(UncBoxLoss_CORNER, self).__init__()
         self.use_gpu = use_gpu
@@ -496,33 +489,19 @@ class UncBoxLoss_CORNER(nn.Module):
 
         loss_tl = NLL_loss(gt_x_tl,coord_x,sigma_x_tl) * NLL_loss(gt_y_tl,coord_y,sigma_y_tl)
         loss_tl = torch.clamp(loss_tl,min = 0.0,max = 1.0)
-        # plain loss
-        loss_plain_tl = -torch.log(loss_tl + epsi) / balance
-        loss_plain_tl = loss_plain_tl.sum() / loss_plain_tl.shape[-1]
         # prob version
         loss_tl = -prob_tl * torch.log(loss_tl + epsi) / balance
-        loss_tl = loss_tl.sum() # / loss_tl.shape[-1]
+        loss_tl = loss_tl.sum()
 
-
-
-        #non prob version
-        #loss_tl = -torch.log(loss_tl + epsi) / balance
-        #loss_tl = loss_tl.sum() / loss_tl.shape[-1]
 
         loss_br = NLL_loss(gt_x_br, coord_x, sigma_x_br) * NLL_loss(gt_y_br, coord_y, sigma_y_br)
         loss_br = torch.clamp(loss_br, min=0.0, max=1.0)
-        # plain loss
-        loss_plain_br = -torch.log(loss_br + epsi) / balance
-        loss_plain_br = loss_plain_br.sum() / loss_plain_br.shape[-1]
         # prob version
         loss_br = -prob_br * torch.log(loss_br + epsi) / balance
-        loss_br = loss_br.sum() # / loss_br.shape[-1]
+        loss_br = loss_br.sum()
 
-        # non prob version
-        #loss_br = -torch.log(loss_br + epsi) / balance
-        #loss_br = loss_br.sum() / loss_br.shape[-1]
-        # loss_l = loss_tl + loss_br
-        loss_l = loss_tl + loss_br #+ 1/6 * (loss_plain_tl + loss_plain_br)
+
+        loss_l = loss_tl + loss_br
         loss_l = loss_l / B
         return loss_l
 
