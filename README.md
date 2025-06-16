@@ -118,11 +118,12 @@ If you think this project is helpful, please feel free to leave a star⭐️ and
 @ARTICLE{10967033,
   author={Yao, Siyuan and Guo, Yang and Yan, Yanyang and Ren, Wenqi and Cao, Xiaochun},
   journal={IEEE Transactions on Image Processing}, 
-  title={UncTrack: Reliable Visual Object Tracking with an Uncertainty-Aware Prototype Memory Network}, 
+  title={UncTrack: Reliable Visual Object Tracking With Uncertainty-Aware Prototype Memory Network}, 
   year={2025},
-  volume={},
+  volume={34},
   number={},
-  pages={1-1}
+  pages={3533-3546}
 }
+
 ```
 ```
